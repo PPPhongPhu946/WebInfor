@@ -6,4 +6,10 @@
 .container{
 	
 }
-
+ .tay{
+	text-align: center;
+	padding: 15px;
+	background-color:#03498b;
+	border-radius:10px;
+	text-color: #ffffff;
+}
