@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<title>Trang đăng ký</title>
+		<link rel="stylesheet" href="../css/style3.css">
+	</head>
+	<body>
+		<div class="container register-container">
+			<form id="frmRegister">
+				<h3 id="title">Phiếu đăng ký</h3>
+
+				<div class="form-group">
+					<label for="txtFullName">Họ và tên</label>
+					<input class="form-control" type="text" id="txtFullName" name="txtFullName" placeholder="Nhập họ và tên" required>
+				</div>
+
+				<div class="form-group">
+					<label for="txtStudentId">MSSV</label>
+					<input class="form-control" type="text" id="txtStudentId" name="txtStudentId" placeholder="Nhập mã số sinh viên" required>
+				</div>
+
+				<div class="form-group">
+					<label for="selClass">Lớp</label>
+					<select class="form-control" id="selClass" name="selClass" required>
+						<option value="">-- Chọn lớp --</option>
+						<option value="cntt1">CNTT 1</option>
+						<option value="cntt2">CNTT 2</option>
+						<option value="cntt3">CNTT 3</option>
+						<option value="cntt4">CNTT 4</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="dtBirth">Ngày sinh</label>
+					<input class="form-control" type="date" id="dtBirth" name="dtBirth" required>
+				</div>
+
+				<div class="form-group">
+					<label for="txtAddress">Địa chỉ</label>
+					<input class="form-control" type="text" id="txtAddress" name="txtAddress" placeholder="Nhập địa chỉ" required>
+				</div>
+
+				<div class="form-group">
+					<label for="txtPhone">Số điện thoại</label>
+					<input class="form-control" type="tel" id="txtPhone" name="txtPhone" placeholder="Ví dụ: 0912345678" pattern="[0-9]{10}" required>
+				</div>
+
+				<div class="form-group">
+					<p class="group-label">Giới tính</p>
+					<div class="inline-options">
+						<label><input type="radio" name="gender" value="nam" required> Nam</label>
+						<label><input type="radio" name="gender" value="nu"> Nữ</label>
+						<label><input type="radio" name="gender" value="khac"> Khác</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<p class="group-label">Điểm mạnh</p>
+					<div class="inline-options">
+						<label><input type="checkbox" name="strength" value="giao-tiep"> Giao tiếp</label>
+						<label><input type="checkbox" name="strength" value="lam-viec-nhom"> Làm việc nhóm</label>
+						<label><input type="checkbox" name="strength" value="lap-trinh"> Lập trình</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="txtNote">Ghi nhận</label>
+					<textarea class="form-control" id="txtNote" name="txtNote" rows="4" placeholder="Nhập ghi nhận thêm"></textarea>
+				</div>
+
+				<input class="button" type="submit" value="Đăng ký">
+				<input class="button button-secondary" type="reset" value="Nhập lại">
+			</form>
+		</div>
+	</body>
+</html>
