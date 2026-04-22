@@ -14,6 +14,11 @@ body {
 	margin: 30px auto;
 }
 
+#frmInBCC {
+	border: 1px solid #000000;
+	padding: 16px;
+}
+
 h2 {
 	margin-bottom: 12px;
 	text-align: center;
@@ -31,24 +36,8 @@ button {
 	margin-bottom: 10px;
 }
 
-#thongBao {
-	margin: 0 0 10px;
-	color: #b00020;
-	font-weight: 600;
-}
-
-table {
-	width: 100%;
-	border-collapse: collapse;
-}
-
-th,
-td {
-	border: 1px solid #000000;
-	padding: 8px;
-	text-align: center;
-}
-
-th {
-	background: #f2f2f2;
+#kq {
+	margin-top: 10px;
+	line-height: 1.8;
+	font-size: 20px;
 }
