@@ -1,0 +1,54 @@
+﻿* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, sans-serif;
+	background: #ffffff;
+	color: #000000;
+}
+
+.container {
+	width: 700px;
+	margin: 30px auto;
+}
+
+h2 {
+	margin-bottom: 12px;
+	text-align: center;
+	font-size: 24px;
+}
+
+label {
+	margin-right: 8px;
+}
+
+input,
+button {
+	padding: 6px 8px;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+#thongBao {
+	margin: 0 0 10px;
+	color: #b00020;
+	font-weight: 600;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 1px solid #000000;
+	padding: 8px;
+	text-align: center;
+}
+
+th {
+	background: #f2f2f2;
+}
