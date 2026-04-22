@@ -44,6 +44,10 @@
 					<td class="dg">5000</td>
 					<td class="tt"></td>
 				</tr>
+				<tr>
+					<td colspan="4"><strong>Tổng tiền</strong></td>
+					<td id="tong"></td>
+				</tr>
 			</table>
 		</div>
 		<script>
@@ -51,11 +55,16 @@
 			const donGiaList = document.getElementsByClassName("dg");
 			const thanhTienList = document.getElementsByClassName("tt");
  			let tong = 0;
-			for(let i=0; i<donGia.length; i++){
-			thanhTien[i].innerHTML = soLuongList[i].innerHTML * donGiaList[i].innerHTML;
-			tong = tong + parseInt(thanhTien[i].innerHTML);
-		}
-		document.getElementById("tong").innerHTML = tong;
+			for (let i = 0; i < donGiaList.length; i++) {
+				const soLuong = Number(soLuongList[i].textContent);
+				const donGia = Number(donGiaList[i].textContent);
+				const thanhTien = soLuong * donGia;
+
+				thanhTienList[i].textContent = thanhTien;
+				tong += thanhTien;
+			}
+
+			document.getElementById("tong").textContent = tong;
 		</script>
 	</body>
 </html>
