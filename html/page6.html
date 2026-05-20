@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Trang quản lý môn học</title>
+    <link rel="stylesheet" href="../css/style6.css">
+</head>
+<body>
+    <h1>Quản lý môn học - Thêm / Xóa / Số tín chỉ</h1>
+
+    <section class="container">
+        <form id="course-form">
+            <label for="course-name">Tên môn học</label>
+            <input id="course-name" name="name" type="text" required placeholder="Nhập tên môn học">
+
+            <label for="course-credits">Số tín chỉ</label>
+            <input id="course-credits" name="credits" type="number" min="0" required placeholder="0">
+
+            <button type="submit">Thêm môn học</button>
+        </form>
+
+        <div id="courses-area">
+            <h2>Danh sách môn học</h2>
+            <ul id="courses-list"></ul>
+            <div id="summary">Tổng số tín chỉ: <span id="total-credits">0</span></div>
+        </div>
+    </section>
+
+    <script src="../js/lib.js"></script>
+</body>
+</html>

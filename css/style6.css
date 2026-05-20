@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #222;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+#course-form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#course-form label { grid-column: 1 / -1; }
+
+#course-form input[type="text"],
+#course-form input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#course-form button {
+    padding: 8px 12px;
+    border: none;
+    background: #2a8fbd;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#courses-list {
+    list-style: none;
+    padding: 0;
+}
+
+#courses-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background: white;
+    border: 1px solid #eee;
+    margin-bottom: 6px;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background: #e14b4b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#summary { margin-top: 10px; font-weight: bold; }

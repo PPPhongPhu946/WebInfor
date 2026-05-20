@@ -6,10 +6,28 @@
 		<link rel="stylesheet" href="../css/style7.css">
 	</head>
 	<body>
-		<button onclick="addProduct()"> 
-			Thêm Sản Phẩm
-		</button>
+		<header>
+			<button onclick="addProduct()">Thêm Sản Phẩm</button>
+		</header>
+
+		<main>
+			<div id="products-area" class="products-area"></div>
+		</main>
+
+		<!-- Modal for full product details -->
+		<div id="product-modal" class="product-modal hidden">
+			<div class="product-modal-content">
+				<button id="product-modal-close" class="modal-close">×</button>
+				<div class="product-modal-body">
+					<img id="modal-image" src="" alt="">
+					<h2 id="modal-title"></h2>
+					<p id="modal-desc"></p>
+					<div id="modal-meta"></div>
+					<a id="modal-link" href="#" target="_blank">Mua hàng / Xem thêm</a>
+				</div>
+			</div>
+		</div>
+
 	<script src="../js/lib.js"></script>
-		<script src="../js/lib.js"></script>
 	</body>
 </html>
